@@ -1,0 +1,22 @@
+﻿# Python env
+.venv/
+__pycache__/
+*.pyc
+
+# Large training artifacts
+Banking_SLM_Project/*.pt
+Banking_SLM_Project/*.bin
+Banking_SLM_Project/*.npy
+Banking_SLM_Project/*.npz
+
+# FAISS / memory bank artifacts
+Banking_SLM_Project/memory_bank/*.index
+Banking_SLM_Project/memory_bank/*.pkl
+Banking_SLM_Project/memory_bank/*.json
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Tokenizer artifacts
+Banking_SLM_Project/tokenizer/
+Banking_SLM_Project/tokenizer_meta_spm32k.json

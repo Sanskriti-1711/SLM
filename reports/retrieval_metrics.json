@@ -1,0 +1,10 @@
+{
+  "input_file": "data/eval/retrieval_predictions.sample.jsonl",
+  "k": 5,
+  "metrics": {
+    "num_examples": 3,
+    "recall_at_k": 1.0,
+    "mrr": 1.0,
+    "grounding_hit_rate": 1.0
+  }
+}

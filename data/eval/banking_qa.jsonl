@@ -1,0 +1,5 @@
+{"question":"What does KYC stand for?","expected_answer":"Know Your Customer","topic":"kyc"}
+{"question":"Which regulator issues banking compliance guidelines in India?","expected_answer":"Reserve Bank of India (RBI)","topic":"regulation"}
+{"question":"What should a customer do after noticing an unauthorized card transaction?","expected_answer":"Immediately report to the bank and block the card","topic":"fraud"}
+{"question":"What is the purpose of AML checks in banking?","expected_answer":"To prevent money laundering and suspicious financial activity","topic":"compliance"}
+{"question":"What is EMI in a loan context?","expected_answer":"Equated Monthly Instalment","topic":"loan"}

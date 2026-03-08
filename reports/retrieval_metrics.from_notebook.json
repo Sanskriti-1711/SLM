@@ -1,0 +1,7 @@
+{
+  "num_examples": 5,
+  "k": 5,
+  "recall_at_k": 0.2,
+  "mrr": 0.05,
+  "grounding_hit_rate": 1.0
+}

@@ -146,8 +146,23 @@ This supports traceability and review.
 
 ## Suggested Next Improvements
 
-- add a dedicated `requirements.txt` for exact environment pinning
-- add scripted runner (non-notebook) for reproducible training/eval
-- add automated eval set focused on banking Q/A quality
-- add retrieval quality metrics (recall@k, grounding hit rate)
-- separate public demo config from heavy training config
+1. Add a scripted runner (non-notebook) for reproducibility.
+
+2. Add an automated banking QA evaluation set.
+Create `data/eval/banking_qa.jsonl` with `question`, `expected_answer`, and `topic` fields, then compute exact match/F1 on a fixed eval script so model quality is trackable across runs.
+
+3. Separate demo config from heavy training config.
+Keep two explicit profiles:
+- `demo`: low steps, low memory footprint, fast turnaround,
+- `train`: longer runs, larger token budget, stricter evaluation/checkpointing.
+
+## Current Model Status and Limitation
+
+Current model quality is still below target for coherent, domain-reliable answers.
+The main reason is insufficient training budget relative to model/data complexity:
+
+- too few effective training updates/tokens seen,
+- limited GPU memory forcing small micro-batches and conservative settings,
+- restricted compute time.
+
+In short: the approach and architecture are in place, but the model needs more training time and stronger compute to converge to stable banking-grade performance.
